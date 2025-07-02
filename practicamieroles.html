@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda avanzada</title>
+    <link rel="stylesheet" href="style5.css">
 </head>
 <body>
-    
+    <h1>Bienvenido a la Tienda</h1>
+
+    <input type="text" class="busqueda" placeholder="Buscar mas productos...">
+
+    <div class="filtros" >
+        <label><input type="checkbox" checked>Electrónica</label>
+        <label><input type="checkbox" >Ropa</label>
+        <label><input type="checkbox" disabled>Juegos</label>
+    </div>
+    <ul class="productos">
+        <li class="producto">producto A - $1000 <button>Comprar</button></li>
+        <li class="producto">producto B - $1500 <button>Comprar</button></li>
+        <li class="producto">producto C - $2000 <button>Comprar</button></li>
+        <li class="producto destacado">producto D - $2500 <button disabled>Agotado</button></li>
+    </ul>
+    <form class="formulario">
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo Electrónico">
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
