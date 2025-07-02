@@ -17,3 +17,34 @@ body {
 .producto:first-child {
     border-left: 5px solid green;
 }
+.producto :last-child {
+    border-left: 5px solid red;
+}
+.producto:nth-child(2) {
+    font-size: italic;
+}
+.producto:not(.destacado):hover {
+    cursor: pointer;
+    background-color: #c6c6c6;
+}
+button:disabled {
+    background-color: #999;
+    color: white;
+    cursor: not-allowed;
+}
+input [type="checkbox"]:checked {
+    outline: 2px solid green;
+}
+input [type="checkbox"]:disabled + label {
+    color: #888;
+}
+input:focus {
+    border: 2px solid blue;
+    outline: none;
+}
+.formulario input:first-child {
+    background-color: #eef;
+}
+.formulario input:last-child {
+    background-color: #efe;
+}
